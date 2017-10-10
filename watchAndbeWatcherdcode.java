@@ -1,4 +1,6 @@
-
+//4个部分,主题（被观察者）接口、订阅（观察者）接口，具体主题，具体订阅。
+//本质是：EDM event 驱动，将观察者绑定到对应的事件，当事件发生变更，通知对应的观察者作出响应。
+//这是观察者模式的本质。
 public interface issue{
 	public void addWatch();
 	public void removeWatch();
@@ -38,6 +40,8 @@ public class concreteWatch implements watch{
 	} 
 }
 
+
+//demo class show 
 public class mainClass{
 	public static void main(String[] args) {
 		concreateIssue cIss = new concreateIssue();
